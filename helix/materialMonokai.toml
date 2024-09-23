@@ -1,0 +1,117 @@
+inherits="onedark"
+
+"ui.background" = { fg = "text", bg = "background_light" }
+
+"ui.window" = { bg = "widget" }
+"ui.popup" = { fg = "text", bg = "widget" }
+"ui.help" = { fg = "text", bg = "widget" }
+"ui.menu" = { fg = "text", bg = "widget" }
+"ui.menu.selected" = { bg = "#414339" }
+
+"ui.cursor" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.primary" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "#888888", modifiers = ["reversed"] }
+
+"ui.selection" = { bg = "#878b91" }
+"ui.selection.primary" = { bg = "#575b61" }
+
+"ui.linenr" = { fg = "#90908a" }
+"ui.linenr.selected" = { fg = "#c2c2bf" }
+
+"ui.cursorline" = { bg = "#1A2327" }
+"ui.cursorline.primary" = { bg = "#1A2327" }
+"ui.cursorline.secondary" = { bg = "#1A2327" }
+
+
+"ui.statusline" = { fg = "active_text", bg = "background_dark" }
+
+
+# "ui.bufferline.background" = {bg = "background_dark"}
+
+"ui.bufferline.active" = { fg = "white", bg = "yellow_accent" }
+"ui.bufferline.background" = {bg = "background_light"}
+"ui.bufferline" = { fg = "light-gray", bg = "background_dark" }
+
+"ui.text" = { fg = "text" }
+"ui.text.focus" = { fg = "active_text" }
+
+"warning" = { fg = "#cca700" }
+"error" = { fg = "#f48771" }
+"info" = { fg = "#75beff" }
+"hint" = { fg = "#eeeeb3" }
+
+"diagnostic.warning" = { underline = { color = "#cca700", style = "curl" } }
+"diagnostic.error" = { underline = { color = "#f48771", style = "curl" } }
+"diagnostic.info" = { underline = { color = "#75beff", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "#eeeeb3", style = "curl" } }
+
+
+"function" = { fg = "#9DFF00" }
+"function.macro" = {fg = "red"}
+"function.builtin" = {fg = "blue"} #def
+"keyword.control" = {fg = "red"} # If, else, for, return
+
+"comment" = { fg = "#5F7A87" } # comments
+"string" = {fg = "yellow"} # strings, duh
+"namespace" = {fg = "white"} #name of modules in imports, namespaces in dotnet etc
+"variable.parameter" = { fg = "orange" } #parameters to functions
+"variable.other.member" = {fg = "green"}
+# "variable.other" = {fg = "green"}
+"constant.numeric" = { fg = "purple" }
+"constant.builtin" = { fg = "purple" }
+"operator" = { fg = "red"}
+"keyword.operator" = { fg = "red" }
+"keyword.directive" = { fg = "red" }
+"keyword.control.import" = {fg = "red"} #import
+# "keyword" = {fg = "blue"}
+# "attribute" = {fg = "blue"}
+# "tag" = {fg = "blue"}
+"constant.character.escape" = { fg = "purple" }
+
+"markup.heading" = {fg = "green"}
+"markup.list" = {fg = "yellow"}
+"markup.list.*" = {fg = "yellow"}
+
+"markup.raw.inline" = {fg = "orange"}
+"markup.raw.block" = {fg = "orange"}
+
+[palette]
+type = "#A6E22E"
+keyword = "#F92672"
+regex = "#CE9178"
+special = "#C586C0"
+variable = "#F8F8F2"
+fn_declaration = "#A6E22E"
+
+background_light = "#263238FF"
+background_dark = "#192227FF"
+yellow_accent = "#B59206"
+text = "#ffffff"
+active_text = "#ffffff"
+accent = "#9dff00"
+cursor = "#9dff00"
+inactive_cursor = "#9dff00"
+widget = "#192227"
+selection = "#3e515b"
+
+# yellow = "#E5C07B"
+# blue = "#61AFEF"
+# red = "#E06C75"
+# purple = "#C678DD"
+green = "#9DFF00"
+
+orange = "#FD971F"
+purple = "#B78AFF"
+yellow = "#E6DB74"
+blue = "#2EDCFF"
+red = "#FF2C96"
+# green = "#98C379"
+gold = "#D19A66"
+cyan = "#56B6C2"
+white = "#ffffff"
+black = "#282C34"
+light-black = "#2C323C"
+gray = "#3E4452"
+faint-gray = "#3B4048"
+light-gray = "#5C6370"
+linenr = "#4B5263"
