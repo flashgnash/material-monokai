@@ -13,11 +13,276 @@
         --bg-light-transparent: #263238bb;
 
         --accent: #9dff00;
+        --accent-dark: #8acc00;
         --text-color: #ffffff;
 
-
-
+        --button-color: #27383B;
+         
         font-family: "Comic Mono";
+    }
+
+
+}
+
+@-moz-document domain(mail.google.com) {
+    
+    .aKk, /* Primary, Promotions etc */
+    .aeH, /* Refresh, more, arrow buttons*/
+    .aeN { /* Sidebar */
+        background-color: var(--bg-dark);
+    }
+    
+    
+    
+    
+    .TO.aBP.nZ.aiq {
+        background-color: var(--accent-dark);
+    }
+    
+    #aso_search_form_anchor { /* Search bar */
+        background-color: var(--bg-light) !important;
+        
+    }
+    .z0 > .L3 { /* Compose button */
+        background-color: var(--bg-light) !important;
+        color: white !important;
+    }
+
+    .AO *{
+        background-color: var(--bg-light) !important;
+        color: white !important;
+    }
+    
+    header {
+        background: var(--bg-dark) !important;
+    }
+    
+    .T-I.T-I-KE.L3 { /* Compose button */
+            margin-right: 20px;
+      width: 100%;
+      margin-left: 5px;
+    }
+    
+    
+
+    .aUx { /* Right hand sidebar */
+        width: 0px;
+    }
+    
+    .bkK > .nH {
+        margin-bottom: 0px !important;
+        height: 100%;
+        background-color: var(--bg-light);
+    }
+    
+    .nH {
+        border-radius: 0px !important;
+        margin: 0px;
+    }
+    
+    tr.zA.yO {
+        background: var(--bg-light) !important;
+    }
+    
+}
+
+/* Lemmy has thousands of domains so I've just used my preferred instance*/
+@-moz-document domain("lemm.ee") {
+    
+    
+    * {
+        --bs-card-bg: var(--bg-dark) !important;
+        --bs-card-cap-bg: var(--bg-dark);
+        --bs-btn-bg: var(--button-color) !important;
+        --bs-btn-color: var(--text-color) !important;
+        --bs-btn-border-width: 0 !important;
+        --bs-dropdown-bg: var(--bg-dark) !important;
+        --bs-border-color: none !important;
+    }
+    
+    .bg-light {
+        background-color: var(--bg-light) !important;
+    }
+    
+    .markdown-textarea .bg-light {
+        background-color: var(--bg-dark) !important;
+        border-width: 0px !important;
+    }
+
+    
+    .markdown-textarea {
+        background-color: var(--bg-dark) !important;
+        padding: 15px;
+        border-width: 0px;
+        border-radius: 15px;
+
+    }
+    
+    .markdown-textarea textarea {
+        background-color: var(--bg-light) !important;
+        border-width: 0px;
+                border-radius: 0 15px 15px 15px !important;
+        
+        min-height: 100px;
+
+    }
+    
+    .markdown-textarea .form-select {
+         background: var(--bg-light) !important;
+
+    }
+    
+    
+    .markdown-textarea .btn {
+        background-color: var(--bg-light) !important;
+    }
+    
+    .markdown-textarea .d-flex.flex-wrap.border-bottom > .btn:first-child{
+        border-top-left-radius: 10px !important;
+    }
+    .markdown-textarea .d-flex.flex-wrap.border-bottom > .btn:last-child{
+        border-top-right-radius: 10px !important;
+        padding-right: 15px;
+    }
+    
+    .btn:hover {
+        background: var(--accent) !important;
+        color: black !important;
+    }
+    
+    
+
+    
+    .comment-bottom-btns .btn {
+        height: 40px;
+        min-width: 45px;
+        margin: 4px !important;;
+        padding: 2px;
+          display: flex;
+  justify-content: center;
+  align-items: center;
+        
+    }
+    
+    
+    .btn:disabled {
+        color: white;
+    }
+    
+    .btn-group .btn {
+        border-radius: 0px !important;
+        color: var(--text) !important;
+        background: var(--bg-dark) !important;
+    }
+    .btn.active {
+        border-bottom-width: 3px !important;
+        border-color: var(--accent) !important;
+    }
+    
+    .form-select {
+        background: var(--bg-dark);
+    }
+    
+    div > ul > li > article:nth-child(1) {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-top: 10px;
+        
+    }
+    
+    div > ul > li > article:last-child {
+            border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+
+    }
+    
+    
+    .details.comment-node.py-2.border-top.border-light {
+        background: var(--bg-dark);
+        border: 0px !important;
+        border-top: 0px !important;
+        padding: 5px;
+    }
+    
+    
+    
+    .shadow-sm {
+        background: var(--bg-dark);
+    }
+    
+    .vote-bar {
+        height: 100%;
+        width: 10px;
+    }
+    
+    .vote-bar .post-score {
+        margin: auto;
+    }
+    
+    .vote-bar .btn {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    
+    .offset-sm-3 {
+            margin-left: 0;
+        }
+    
+    
+    
+    .post-listing {
+        background: var(--bg-dark);
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 0px !important;
+    }
+    
+    
+    .card-header {
+        border-radius: 15px 15px 0px 0px !important;
+        border-bottom: 0px;
+        padding: 15px;
+    }
+    
+    .card {
+        border: 0;   
+        border-radius: 15px;
+    }
+    
+    
+    body {
+        background: var(--bg-light);
+    }
+}
+
+@-moz-document domain("app.element.io") {
+    
+    * {
+        --cpd-color-bg-canvas-default: var(--bg-light);
+        --cpd-color-bg-subtle-secondary: var(--bg-dark);
+    }
+    
+
+
+    .mx_MessageComposer_wrapper {
+        padding: 0px;
+        margin-right: 5px;
+    }
+    
+    .mx_BasicMessageComposer {
+        background: var(--bg-dark);
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 0;
+        border-radius: 10px;
+    }
+    
+    .mx_LeftPanel_wrapper .mx_LeftPanel_wrapper--user,
+    .mx_SpacePanel {
+        background: var(--bg-dark)
     }
 }
 
@@ -489,6 +754,8 @@ ytmusic-player-page:not([is-video-truncation-fix-enabled])[has-av-switcher] #pla
         --ytd-searchbox-legacy-button-border-color: var(--cyan);
         --ytd-searchbox-legacy-button-color: var(--blue);
     }
+    
+    
 
     tp-yt-app-drawer {
         display: none;
