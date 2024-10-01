@@ -2,6 +2,9 @@
 
 A collection of my adapations of the vs code theme "Material Monokai" by Alessio Enrico (https://github.com/repeale/material-monokai)
 
+Contributions welcome if you like the theme and want to port it to other applications, for existing themes please raise an issue first if there's something you'd like changed. (alternatively feel free to fork and make your own version)
+
+
 ## VS Code
 Use the original theme https://github.com/repeale/material-monokai (found on the VSCode marketplace as Material Monokai)
 
