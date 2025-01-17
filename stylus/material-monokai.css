@@ -1,3 +1,4 @@
+
 /* ==UserStyle==
 @name           Material Monokai High Contrast
 @namespace      github.com/openstyles/stylus
@@ -9,8 +10,10 @@
     :root {
         --bg-light: #263238;
         --bg-dark: #192227;
-        --bg-dark-transparent: #192227bb;
-        --bg-light-transparent: #263238bb;
+        --bg-dark-transparent: #19222788;
+        --bg-light-transparent: #26323888;
+        
+        --selected-list-item-color: #384951;
 
         --accent: #9dff00;
         --accent-dark: #8acc00;
@@ -21,7 +24,65 @@
         font-family: "Comic Mono";
     }
 
+    * {
+        font-family: "Comic Mono";
+    }
+}
 
+@-moz-document domain(mail.proton.me) {
+    * {
+        --sidebar-background-color: var(--bg-dark);
+        --background-norm: var(--bg-dark);
+        --background-weak: var(--bg-light);
+        --background-strong: var(--bg-light);
+        --header-background-color: var(--bg-dark);
+        --toolbar-background-color: var(--bg-dark);
+        --email-item-unread-background-color: var(--bg-light);
+        --email-item-read-background-color: var(--bg-light);
+        --navigation-current-item-background-color: var(--selected-list-item-color);
+                --navigation-current-item-text-color: var(--accent);
+        --border-norm: none;
+        --border-weak: none;
+        
+        --navigation-item-count-background-color: var(--accent);
+        --navigation-item-count-text-color: black;
+
+
+
+    }
+.button-outline-norm {
+        display: none;
+    }
+    
+    .drawer-sidebar {
+        background: var(--bg-dark)
+    }
+    
+    .view-column-detail {
+        background: var(--bg-dark);
+        border-width: 0;
+    }
+    .message-header {
+        background-color: var(--bg-light) !important;
+    }
+    
+    .toolbar > .ml-auto > div.justify-space-between:nth-child(1) {
+        border-radius: 15px;
+         background: var(--bg-light);
+
+    }
+    
+    .toolbar > .ml-auto > div.justify-space-between:nth-child(1) button {
+        border-radius: 0px;
+        background: var(--bg-light);
+        margin: 0px;
+
+    }
+    
+    .toolbar > .ml-auto > div.justify-space-between:nth-child(1) button.bg-strong {
+        border-width: 0px 0px 2px 0px;
+        border-color: var(--accent);
+    }
 }
 
 @-moz-document domain(mail.google.com) {
@@ -98,6 +159,7 @@
         --bs-btn-border-width: 0 !important;
         --bs-dropdown-bg: var(--bg-dark) !important;
         --bs-border-color: none !important;
+        --bs-table-bg: var(--bg-dark);
     }
     
     .bg-light {
@@ -402,83 +464,83 @@
     }
 }
 
-@-moz-document domain("chatgpt.com") {
-    :root {
-        --gray-800: var(--bg-light);
-        --surface-primary: var(--bg-light);
-        --sidebar-surface-primary: var(--bg-dark);
+/* @-moz-document domain("chatgpt.com") { */
+    /* :root { */
+        /* --gray-800: var(--bg-light); */
+        /* --surface-primary: var(--bg-light); */
+        /* --sidebar-surface-primary: var(--bg-dark); */
 
-        --gray-750: var(--bg-dark);
-    }
-
-
+        /* --gray-750: var(--bg-dark); */
+    /* } */
 
 
-    div.text-sm:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
-        max-width: 100%;
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-
-    div.w-full:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
-        width: 100%;
-        float: left
-    }
-
-    div.text-sm:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
-        float: right
-    }
-
-    #radix-\:r1f\: {
-        display: none
-    }
-
-    div.px-3:nth-child(1) {
-        padding: 0px;
-    }
-
-    .md\:pt-0 > div:nth-child(1) > div:nth-child(1) {
-
-        padding: 10px;
-        border-radius: 5px !important;
-        width: 100%;
-        margin: 0px;
-    }
-
-    .bottom-2,
-    div.px-2 {
-        display: none;
-    }
-
-    #radix-\:r1d\: > div:nth-child(1) {
-        display: none;
-    }
 
 
-    .bg-token-main-surface-primary {
-        background: var(--bg-dark);
-        height: 30px;
-        padding: 4px;
-        padding-bottom: 10px;
-    }
+    /* div.text-sm:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) { */
+        /* max-width: 100%; */
+        /* padding-right: 50px; */
+        /* padding-left: 50px; */
+    /* } */
 
-    .w-full.text-token-text-primary {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+    /* div.w-full:nth-child(3) > div:nth-child(1) > div:nth-child(1) { */
+        /* width: 100%; */
+        /* float: left */
+    /* } */
 
-    div.w-full * {
-        max-width: 100%;
-    }
-    .rounded-\[26px\] {
-        border-radius: 10px
-    }
+    /* div.text-sm:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) { */
+        /* float: right */
+    /* } */
+
+    /* #radix-\:r1f\: { */
+        /* display: none */
+    /* } */
+
+    /* div.px-3:nth-child(1) { */
+        /* padding: 0px; */
+    /* } */
+
+    /* .md\:pt-0 > div:nth-child(1) > div:nth-child(1) { */
+
+        /* padding: 10px; */
+        /* border-radius: 5px !important; */
+        /* width: 100%; */
+        /* margin: 0px; */
+    /* } */
+
+    /* .bottom-2, */
+    /* div.px-2 { */
+        /* display: none; */
+    /* } */
+
+    /* #radix-\:r1d\: > div:nth-child(1) { */
+        /* display: none; */
+    /* } */
 
 
-    #radix-\:raf\: {
-        display: none;
-    }
-}
+    /* .bg-token-main-surface-primary { */
+        /* background: var(--bg-dark); */
+        /* height: 30px; */
+        /* padding: 4px; */
+        /* padding-bottom: 10px; */
+    /* } */
+
+    /* .w-full.text-token-text-primary { */
+        /* padding-left: 80px; */
+        /* padding-right: 80px; */
+    /* } */
+
+    /* div.w-full * { */
+        /* max-width: 100%; */
+    /* } */
+    /* .rounded-\[26px\] { */
+        /* border-radius: 10px */
+    /* } */
+
+
+    /* #radix-\:raf\: { */
+        /* display: none; */
+    /* } */
+/* } */
 @-moz-document domain("startpage.com") {
     @media (prefers-color-scheme: dark) {
         html {
@@ -534,8 +596,10 @@
 }
 @-moz-document domain("music.youtube.com") {
 
+    
 
     html {
+        
         --ytmusic-color-black1: var(--bg-dark);
         --ytmusic-color-black4: var(--bg-light);
     }
@@ -545,8 +609,15 @@
         --ytmusic-carousel-items-per-column: 2;
     }
 
+    img.tp-yt-iron-icon {
+        content: url("https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/settings-3-1024.png") !important;
+    }
     
     
+    h2.content-group:nth-child(3) > yt-formatted-string:nth-child(1),
+html.no-focus-outline body ytmusic-app ytmusic-app-layout#layout.style-scope.ytmusic-app div#content.style-scope.ytmusic-app ytmusic-browse-response#browse-page.style-scope.ytmusic-app div.background-gradient.style-scope.ytmusic-browse-response div#content-wrapper.style-scope.ytmusic-browse-response ytmusic-section-list-renderer.style-scope.ytmusic-browse-response div#contents.style-scope.ytmusic-section-list-renderer ytmusic-carousel-shelf-renderer.style-scope.ytmusic-section-list-renderer.fullbleed div.ytmusic-shelf.style-scope.ytmusic-carousel-shelf-renderer div#header-group.header-group.style-scope.ytmusic-carousel-shelf-renderer ytmusic-carousel-shelf-basic-header-renderer.header.style-scope.ytmusic-carousel-shelf-renderer ytmusic-thumbnail-renderer.image.style-scope.ytmusic-carousel-shelf-basic-header-renderer {
+        display: none;
+    }
     
     #player,
     #song-media-window {
@@ -572,10 +643,18 @@ ytmusic-player-page:not([is-video-truncation-fix-enabled])[has-av-switcher] #pla
     ytmusic-search-box .ytmusic-search-box {
         background-color: var(--bg-light) !important;
     }
+    
+    body {
+        background: transparent !important;
+    }
 
     .background-gradient {
         background-image: unset !important;
-        background: var(--bg-light);
+        background: var(--bg-light-transparent);
+    }
+    
+    img.image.style-scope.ytmusic-fullbleed-thumbnail-renderer {
+        display: none;
     }
 
     #items.ytmusic-carousel .ytmusic-carousel:first-child,
@@ -589,7 +668,7 @@ ytmusic-player-page:not([is-video-truncation-fix-enabled])[has-av-switcher] #pla
 
 
     ytmusic-carousel-shelf-renderer.style-scope {
-        background-color: var(--bg-dark);
+        background-color: transparent;
         padding: 15px;
         border-radius: 15px !important;
         margin: 0 auto;
@@ -690,8 +769,8 @@ ytmusic-player-page:not([is-video-truncation-fix-enabled])[has-av-switcher] #pla
 
     html {
 
-        --background-primary: var(--bg-light);
-        --background-secondary: var(--bg-dark);
+        --background-primary: var(--bg-light-transparent);
+        --background-secondary: var(--bg-dark-transparent);
         --background-tertiary: #1d2021;
         --current-line: #282828;
         --selection: var(--bg-dark);
@@ -705,6 +784,10 @@ ytmusic-player-page:not([is-video-truncation-fix-enabled])[has-av-switcher] #pla
         --purple: #bd93f9;
         --red: var(--accent);
         --yellow: #ffffff --blue: #ffffff;
+        
+    }
+    html[dark] {
+        background-color: transparent !important;
     }
 
     html:not(.style-scope)[dark],
@@ -842,6 +925,23 @@ ytmusic-player-page:not([is-video-truncation-fix-enabled])[has-av-switcher] #pla
         width: 100%;
         background: var(--bg-dark);
     }
+    
+    .ytSearchboxComponentInputBox {
+        border-color: transparent;
+        background-color: var(--bg-light);
+        border-radius: 5px 0px 0px 5px;
+    }
+    .ytSearchboxComponentSearchButton {
+        border-radius: 0px 5px 5px 0px;
+        border-color: transparent;
+        background-color: var(--bg-light);
+    }
+    #end > div:nth-child(2) > ytd-button-renderer:nth-child(1),
+    #voice-search-button {
+        display: none;
+    }
+    
+
 
     paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
         opacity: 1;
@@ -982,10 +1082,21 @@ ytmusic-player-page:not([is-video-truncation-fix-enabled])[has-av-switcher] #pla
 @-moz-document domain("duckduckgo.com") {
     html {
         --theme-bg-legacy-home: #ffffff;
-        --theme-bg-home-custom: var(--bg-dark) !important;
+        --theme-bg-home-custom: var(--bg-light-transparent) !important;
+        --color-gray100: transparent !important;
     }
+    .header_mobileSearchboxWrap__y_jIk {
+        margin-top: 40vh;
+    }
+    
+    
+    .homepage-cta-section_scrollCta__HuSCL,
+    .desktop-homepage_heroContent__px79B {
+        display: none;
+    }
+    
     #searchbox_input {
-        background-color: var(--bg-light)
+        background-color: var(--bg-light-transparent)
     }
 
     .legacy-homepage_root__Rz_nu {
